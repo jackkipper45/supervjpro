@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Wheel</title>
+
+  <style>
+
+    :root {
+      --size-wheel: 25rem;
+    }
+
+    html {
+      box-sizing: border-box;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .msg {
+      min-height: 4rem;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 0.5rem;
+      text-transform: capitalize;
+    }
+
+    /* CSS cho Wheel */
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <section class="main">
+      <span>
+        <ul class="wheel"></ul>
+      </span>
+      <button class="btn--wheel">Quay thưởng</button>
+    </section>
+    <h1 class="msg"></h1>
+  </main>
+
+  <script>
+
+    (() => {
+
+      const $ = document.querySelector.bind(document);
+
+      let timeRotate = 7000; 
+      let currentRotate = 0;
+      let isRotating = false;
+      const wheel = $('.wheel');
+      const btnWheel = $('.btn--wheel');
+      const showMsg = $('.msg');
+
+      // Danh sách phần thưởng
+      const listGift = []; 
+
+      // Xử lý quay thưởng
+
+    })();
+
+  </script>
+
+</body>
+
+</html>
